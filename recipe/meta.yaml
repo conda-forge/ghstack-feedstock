@@ -1,5 +1,5 @@
 {% set name = "ghstack" %}
-{% set version = "0.9.3" %}
+{% set version = "0.9.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ghstack-{{ version }}.tar.gz
-  sha256: 90a0c09ec8f463ef73939d1620448a9c4d723b3e9f887dc97f08be4b2163193f
+  sha256: 0e024e8eef32eba097075ae7dbc7dcac222145988b96a3c4c3c4b8f9a3bff2cb
 
 build:
   entry_points:
