@@ -1,5 +1,5 @@
 {% set name = "ghstack" %}
-{% set version = "0.9.4" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ghstack-{{ version }}.tar.gz
-  sha256: 0e024e8eef32eba097075ae7dbc7dcac222145988b96a3c4c3c4b8f9a3bff2cb
+  sha256: 1f44f4dea6a733d050ef6c062330665c00e4bceafcb9fb8aee6c49d67d458aec
 
 build:
   entry_points:
     - ghstack = ghstack.cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
